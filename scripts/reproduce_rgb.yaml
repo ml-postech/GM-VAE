@@ -1,0 +1,15 @@
+method: grid
+name: Reproduce CUB, Food101, and Oxford102
+parameters:
+  dist:
+    values: ['PGMNormal', 'EuclideanNormal', 'HWNormal', 'PoincareNormal']
+  exp_name:
+    value: reproduce
+  latent_dim:
+    values: [25, 30, 35]
+  seed:
+    values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  task:
+    values: ['CUB', 'Food101', 'Oxford102']
+program: train_vae.py
+project: GMVAE

@@ -1,0 +1,15 @@
+method: grid
+name: Reproduce Breakout
+parameters:
+  dist:
+    values: ['PGMNormal', 'EuclideanNormal', 'HWNormal', 'PoincareNormal']
+  exp_name:
+    value: reproduce
+  latent_dim:
+    values: [1, 2, 4]
+  seed:
+    values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  task:
+    value: 'Breakout'
+program: train_vae.py
+project: GMVAE

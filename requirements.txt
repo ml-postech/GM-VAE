@@ -1,0 +1,11 @@
+numpy
+torch
+torchvision
+opencv-python
+wandb
+pandas
+plotly
+scipy
+h5py
+Pillow
+tqdm
