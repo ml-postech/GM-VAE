@@ -1,5 +1,8 @@
 # Hyperbolic VAE via Latent Gaussian Distributions
-This repository is the official implementation of ["Hyperbolic VAE via Latent Gaussian Distributions"](https://arxiv.org/abs/2209.15217) accepted by NeurIPS 2023.
+This repository is the official implementation of ["Hyperbolic VAE via Latent Gaussian Distributions"](https://arxiv.org/abs/2209.15217) accepted at NeurIPS 2023.
+<p align="center">
+<img width="482" alt="hwm_analysis" src="https://github.com/ml-postech/GM-VAE/assets/20749482/6867d1d3-42d1-487c-921e-e9fbffae5490">
+</p>
 
 ## Abstract
 We propose a Gaussian manifold variational auto-encoder (GM-VAE) whose latent space consists of a set of Gaussian distributions. It is known that the set of the univariate Gaussian distributions with the Fisher information metric form a hyperbolic space, which we call a Gaussian manifold. To learn the VAE endowed with the Gaussian manifolds, we propose a pseudo-Gaussian manifold normal distribution based on the Kullback-Leibler divergence, a local approximation of the squared Fisher-Rao distance, to define a density over the latent space. In experiments, we demonstrate the efficacy of GM-VAE on two different tasks: density estimation of image datasets and environment modeling in model-based reinforcement learning. GM-VAE outperforms the other variants of hyperbolic- and Euclidean-VAEs on density estimation tasks and shows competitive performance in model-based reinforcement learning. We observe that our model provides strong numerical stability, addressing a common limitation reported in previous hyperbolic-VAEs.
@@ -25,11 +28,11 @@ You can also reproduce the entire table by running the wandb sweeps in `scripts/
 Please cite our paper if you use the model or this code in your own work:
 ```
 @inproceedings{
-anonymous2023hyperbolic,
-title={Hyperbolic VAE via Latent Gaussian Distributions},
-author={Seunghyuk Cho and Juyong Lee and Dongwoo Kim},
-booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-year={2023},
-url={https://openreview.net/forum?id=FNn4zibGvw}
+  anonymous2023hyperbolic,
+  title={Hyperbolic VAE via Latent Gaussian Distributions},
+  author={Seunghyuk Cho and Juyong Lee and Dongwoo Kim},
+  booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+  year={2023},
+  url={https://openreview.net/forum?id=FNn4zibGvw}
 }
 ```
